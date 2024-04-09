@@ -18,4 +18,14 @@ model User{
   name String?
   email String @unique
   password String
+  notes Notes[]
+}
+
+model Notes{
+  id Int @id @default(autoincrement())
+  title String
+  tag String
+  description String
+  userId Int
+  user User @relation(fields: [userId], references: [id])
 }
