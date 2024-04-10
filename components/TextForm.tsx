@@ -31,6 +31,7 @@ export const TextForm = () => {
           e.preventDefault();
           await addNote(title, tag, description)
           router.push('/dashboard')
+          router.refresh()
         }} disabled={!title || !description}>Add Note</button>
       </form>
     </div>
