@@ -24,7 +24,7 @@ The application is deployed and accessible at
 
 1. Clone this repository to your local machine.
 2. Install dependencies using `npm install`.
-3. Add your DATABASE_URL in env and migrate the database with prisma
+3. Add your `DATABASE_URL` in env and migrate the database with prisma
 4. Generate prisma client
 5. Run the application using `npm run dev` in the root directory.
 6. Access the application in your browser at `http://localhost:3000`.
